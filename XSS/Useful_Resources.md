@@ -22,4 +22,4 @@
 
 # Other Resources
 [payload all the things](https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/XSS%20Injection)
-
+[OWASP XSS Filter Evasion Cheat Sheet](https://owasp.org/www-community/xss-filter-evasion-cheatsheet)
