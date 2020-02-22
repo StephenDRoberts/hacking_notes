@@ -32,6 +32,8 @@ Most foilters are If/Else statements & regex
 
 #### Tools for finding XSS
 * Burp Repeater
+* Burp Match & Replace
+* Burp Intruder
 * Input Scanner (by zseano) with a list of various js attributes & html tags
 Mostly use manual testing
 
@@ -49,3 +51,9 @@ a fully formed script tag.
 If everything is encoded then it just might not be vulnerable
 
 Look for interesting endpoints. Try all the features to test.
+
+Try inputting Hex encoded payloads - does it do anything with them or are they simply reflected back?
+
+Try svg tag instead of img src. Try "onbeforescriptexecute"
+
+Test for XSS everywhere then look/search for it later.
