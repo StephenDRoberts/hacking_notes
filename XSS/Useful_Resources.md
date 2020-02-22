@@ -8,6 +8,7 @@
 [7 main Xss cases by BruteLogic](https://brutelogic.com.br/blog/the-7-main-xss-cases-everyone-should-know/)
 [Brute Logics Manual Methodology](https://brutelogic.com.br/blog/testing-for-xss-like-a-knoxss/)
 [Brute Logics Blog](http://brutelogic.com.br/blog/)
+[PortSwigger Academy - XSS](https://portswigger.net/web-security/cross-site-scripting)
 [X-XSS-Protection](https://blog.innerht.ml/the-misunderstood-x-xss-protection/)
 [Turning Self-XSS to Good-XSS](https://whitton.io/articles/uber-turning-self-xss-into-good-xss/)
 [Awsome XSS](https://github.com/s0md3v/AwesomeXSS#awesome-tools)
@@ -19,7 +20,9 @@
 
 # Exercises
 [prompt(1) to win](http://prompt.ml/0)
+[PortSwigger Academy - XSS](https://portswigger.net/web-security/cross-site-scripting)
 
 # Other Resources
 [payload all the things](https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/XSS%20Injection)
 [OWASP XSS Filter Evasion Cheat Sheet](https://owasp.org/www-community/xss-filter-evasion-cheatsheet)
+
