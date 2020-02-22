@@ -42,8 +42,10 @@ NB (41mins) CSRF protection may be in place where it checks if the Origin is set
 and if it isnt, don't allow it. This could be bypassed by changing the request from a POST to a GET.
 This could lead you to think what else isnt checked between POSTS/GETS.
 
-(51mins)
+(51mins, includes examples over next few minutes)
 If you tried "<script>" and it didnt work but then try "<script" and that worked, then you know the developer is filtering for
 a fully formed script tag.
 
+If everything is encoded then it just might not be vulnerable
 
+Look for interesting endpoints. Try all the features to test.
