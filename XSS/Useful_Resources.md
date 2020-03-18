@@ -1,6 +1,6 @@
 # Videos
-[Tech Academy with Tomnomnom](https://www.youtube.com/watch?v=8yMeVA3V4fg)
-[Understanding & bypassing filters with zseano](https://www.youtube.com/watch?v=jtFlbUUKL1Y)
+[Tech Academy with Tomnomnom](https://www.youtube.com/watch?v=8yMeVA3V4fg)  
+[Understanding & bypassing filters with zseano](https://www.youtube.com/watch?v=jtFlbUUKL1Y)  
 
 # Reading
 [Hacksplaining Exercise](https://www.hacksplaining.com/exercises/xss-stored)
