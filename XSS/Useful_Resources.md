@@ -21,7 +21,7 @@
 # Exercises
 [prompt(1) to win](http://prompt.ml/0)
 [PortSwigger Academy - XSS](https://portswigger.net/web-security/cross-site-scripting)
-
+[Brute Logic XSS Exercises](http://brutelogic.com.br/xss.php)
 # Other Resources
 [payload all the things](https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/XSS%20Injection)
 [OWASP XSS Filter Evasion Cheat Sheet](https://owasp.org/www-community/xss-filter-evasion-cheatsheet)
