@@ -74,10 +74,10 @@ The way data needs to be encoded changes depending on the ***context***:
 Context | Encoding
 --- | ---
 HTML | `&lt;i&gt;enzo&ltl/i&gt;`
-CSS | `<\i\>enzo\</i\>
-JavaScript | '\x3ci\ix3eeenzo\x3c\x2fi\x3e'
-URL | \00003Ci\00003Eenzo\00003C\00002Fi\00003E
-LDAP distinguished name | \<i\>enzo\</i\> 
+CSS | `<\i\>enzo\</i\>`
+JavaScript | `'\x3ci\ix3eeenzo\x3c\x2fi\x3e'`
+URL | `\00003Ci\00003Eenzo\00003C\00002Fi\00003E`
+LDAP distinguished name | `\<i\>enzo\</i\>`
 
 Also differnetfor HTML attribute, HTML form URL, LDAP filter, RL path, XML, XML attribute. 
 
@@ -104,6 +104,8 @@ For instance, HTML may be properly encoded, but we may not see any encoding in t
 In this example we are able to pass in untrusted data non-encoded into the JavaScript context:
 
 > `$('#serchTerm').val('enzo/>');`
+
+
 
 ### Testing fo rthe risk of persistent XSS
 
