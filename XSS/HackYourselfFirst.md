@@ -103,9 +103,7 @@ For instance, HTML may be properly encoded, but we may not see any encoding in t
 
 In this example we are able to pass in untrusted data non-encoded into the JavaScript context:
 
-> ```
-$('#serchTerm').val('enzo/>');
-```
+> `$('#serchTerm').val('enzo/>');`
 
 ### Testing fo rthe risk of persistent XSS
 
