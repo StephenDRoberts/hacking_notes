@@ -79,10 +79,33 @@ JavaScript | '\x3ci\ix3eeenzo\x3c\x2fi\x3e'
 URL | \00003Ci\00003Eenzo\00003C\00002Fi\00003E
 LDAP distinguished name | \<i\>enzo\</i\> 
 
+Also differnetfor HTML attribute, HTML form URL, LDAP filter, RL path, XML, XML attribute. 
+
+We're basically just looking for when encoding hasn't been done properly. Maybe data has been HTML encoded when it should have been Javascript encoded.  You may see developers writing their own encoding systems. This is dangerous! We should use a trusted library of a native application for encoding that has experience in encoding untrusted data.
 
 ### Identifying the use of output encoding
 
+When you enter a payload you may want to use the developer tools to see where it's being reflected. This may show that certain characters are actually just being stripped out without any form of encoding. 
+
+The dev tools may also show characters in their natural form. However, if you were to look at the ***view page source*** section, those characters may actually be encoded. This is a discrepancy with the dev tools compared to actual source code. The dev tools are good for showing you what is rendered on page.
+
+(Eg) The dev tools may show `'` however the actual source code shows `&#47` instead, so it's being properly encoded (this is HTML encoding for a forward slash).
+
+When you're looking for risks on a page, be wary of this discrepancy. The data in the HTML ***source*** is a far truer representation of what is being returned by the server.
+
+You want to see where data is being returned by the server -> Input a normal search term and look for it in the source code. This can show that it's being brought into both the HTML and the JavaScript (for instance). This then begs the question:
+
+> ***Is the output encoding being correctly aplied in both locations?***
+
+For instance, HTML may be properly encoded, but we may not see any encoding in the JavaScript when we view the source. In this case, we may want to break out of the JavaScript context and inject our own code in there.
+
 ### Delivering a payload via reflected XSS
+
+In this example we are able to pass in untrusted data non-encoded into the JavaScript context:
+
+> ```
+$('#serchTerm').val('enzo/>');
+```
 
 ### Testing fo rthe risk of persistent XSS
 
